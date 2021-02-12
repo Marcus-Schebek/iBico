@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iBico</title>
+
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+ integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+ crossorigin="">
+</script>
+
+  <link rel="stylesheet" href="./public/css/main.css">
+  <link rel="stylesheet" href="./public/css/animations.css">
+  <link rel="stylesheet" href="./public/css/jobs.css">
+  <link rel="icon" href="./public/images/logo-icon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="page-jobs">
+    <aside class="animation-right">
+      <header>
+        <a href="index.html" class="logo">
+          <img src="./public/images/map-marker.svg" alt="">
+        </a>
+        <h2>Encontre qualquer tipo de serviço na sua região</h2>
+        <p>A sua comunidade possui trabalhadores incríveis para trabalhar com você :D</p>
+      </header>
+      <footer>
+        <strong>Bagé</strong>
+        <p>Rio Grande do Sul</p>
+      </footer>
+    </aside>
+    <div id="mapid" class="animation-fade"></div>
+    <a href="#" class="Sign-a-job animation-up" title="Cadastre o seu trabalho">
+      <img src="./public/images/plus.svg" alt="Adicionar trabalho">
+    </a>
+  </div>
+  <script src="./public/scripts/jobs.js"></script>
+</body>
+
+</html>
